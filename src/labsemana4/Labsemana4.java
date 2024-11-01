@@ -50,14 +50,17 @@ public class Labsemana4 {
 
                 case 2:
                    
-                    System.out.print("Ingrese un numero: ");
+                   System.out.print("Ingrese un numero: ");
                     int numero = scanner.nextInt();
                     int sumaDivisores = 0;
+                    System.out.print("Divisores de " + numero + ": ");
                     for (int i = 1; i < numero; i++) {
                         if (numero % i == 0) {
+                            System.out.print(i + " ");
                             sumaDivisores += i;
                         }
                     }
+                    System.out.println();
                     if (sumaDivisores == numero) {
                         System.out.println(numero + " es un numero perfecto.");
                     } else {
